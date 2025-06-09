@@ -22,3 +22,5 @@ Um site responsivo de múltiplas páginas com um design elegante e minimalista, 
 - ✅ `README.md` do projeto criado.
 - Estilização com CSS.
 - Criação das páginas de Projetos e Sobre.
+- Implementação de funcionalidades com JavaScript.
+
