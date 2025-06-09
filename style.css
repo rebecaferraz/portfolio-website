@@ -164,3 +164,36 @@ footer {
         padding: 2rem 0;
     }
 }
+.soft-skills {
+    background-color: var(--card-bg);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+.soft-skills h3 {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    color: var(--accent-color);
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2rem;
+}
+.skill-item h4 {
+    font-family: var(--font-heading);
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+.skill-item p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
