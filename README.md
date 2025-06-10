@@ -6,7 +6,7 @@ Este é o repositório do meu site portfólio, desenvolvido como parte de um pro
 
 Um site responsivo de múltiplas páginas com um design elegante e minimalista, construído do zero para demonstrar competências em desenvolvimento web front-end.
 
-- **Live Demo:** (https://rebecaferraz.netlify.app/)
+- **Live Demo:** https://rebecaferraz.netlify.app/
 
 ## 🛠️ Tecnologias Utilizadas
 
