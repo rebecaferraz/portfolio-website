@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // EFEITO 1: HEADER MUDA DE ESTILO COM O SCROLL
   const header = document.getElementById("main-header");
   if (header) {
     window.addEventListener("scroll", () => {
@@ -9,13 +10,34 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-  if (typeof AOS !== "undefined") {
-    AOS.init({
-      duration: 800,
-      once: true,
-      offset: 50,
+
+  // EFEITO 2: ANIMAÇÃO FADE-IN AO ROLAR
+  const faders = document.querySelectorAll(".fade-in");
+  if (faders.length > 0) {
+    const appearOptions = {
+      threshold: 0.2,
+      rootMargin: "0px 0px -50px 0px",
+    };
+    const appearOnScroll = new IntersectionObserver(function (
+      entries,
+      observer
+    ) {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target);
+      });
+    },
+    appearOptions);
+
+    faders.forEach((fader) => {
+      appearOnScroll.observe(fader);
     });
   }
+
+  // EFEITO 3: TROCA DE TEMA (DARK/LIGHT)
   const themeToggleButton = document.getElementById("theme-toggle");
   const body = document.body;
 
@@ -26,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
       themeToggleButton.innerText = theme === "dark" ? "☀️" : "🌑";
     }
   };
+
   const savedTheme = localStorage.getItem("theme") || "light";
   applyTheme(savedTheme);
 
@@ -35,6 +58,8 @@ document.addEventListener("DOMContentLoaded", () => {
       applyTheme(newTheme);
     });
   }
+
+  // BÔNUS: ATUALIZAR ANO NO RODAPÉ
   const yearSpan = document.getElementById("year");
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();

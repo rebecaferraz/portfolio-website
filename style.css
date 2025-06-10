@@ -1,3 +1,4 @@
+/* 1. VARIÁVEIS E ESTILOS GLOBAIS */
 :root {
     --light-bg: #F8F8F8;
     --light-text: #222222;
@@ -14,6 +15,7 @@
     --font-heading: 'Lora', serif;
     --font-body: 'Work Sans', sans-serif;
 }
+
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -22,6 +24,7 @@ body {
     margin: 0;
     padding-top: 80px;
 }
+
 body.light {
     --bg-color: var(--light-bg);
     --text-color: var(--light-text);
@@ -29,6 +32,7 @@ body.light {
     --card-bg: var(--light-card-bg);
     --border-color: var(--light-border);
 }
+
 body.dark {
     --bg-color: var(--dark-bg);
     --text-color: var(--dark-text);
@@ -36,11 +40,14 @@ body.dark {
     --card-bg: var(--dark-card-bg);
     --border-color: var(--dark-border);
 }
+
 .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
+
+/* 2. HEADER E NAVEGAÇÃO */
 #main-header {
     position: fixed;
     top: 0;
@@ -49,20 +56,24 @@ body.dark {
     z-index: 1000;
     transition: background-color 0.3s, box-shadow 0.3s;
 }
+
 #main-header.scrolled {
     background-color: rgba(248, 248, 248, 0.8);
     backdrop-filter: blur(10px);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
+
 body.dark #main-header.scrolled {
     background-color: rgba(37, 37, 37, 0.8);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+
 #main-header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
     font-family: var(--font-heading);
     font-weight: 600;
@@ -70,16 +81,19 @@ body.dark #main-header.scrolled {
     color: var(--text-color);
     text-decoration: none;
 }
+
 .main-nav a {
     color: var(--text-color);
     text-decoration: none;
     margin-left: 2rem;
     font-weight: 500;
 }
+
 .main-nav a.active,
 .main-nav a:hover {
     color: var(--accent-color);
 }
+
 #theme-toggle {
     background: none;
     border: none;
@@ -87,12 +101,16 @@ body.dark #main-header.scrolled {
     cursor: pointer;
     color: var(--text-color);
 }
+
+/* 3. CONTEÚDO PRINCIPAL E SEÇÕES */
 main {
     display: block;
 }
+
 section {
     padding: 4rem 0;
 }
+
 section h1,
 section h2 {
     font-family: var(--font-heading);
@@ -100,10 +118,12 @@ section h2 {
     margin-bottom: 1rem;
     color: var(--text-color);
 }
+
 .hero {
     text-align: center;
     padding: 4rem 0;
 }
+
 .hero h1 {
     font-size: 4rem;
     line-height: 1.1;
@@ -111,13 +131,53 @@ section h2 {
     margin-left: auto;
     margin-right: auto;
 }
+
 .hero p {
     font-size: 1.25rem;
     color: #666;
 }
+
 body.dark .hero p {
     color: #999;
 }
+
+.featured-project .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+.project-text span {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--accent-color);
+    font-weight: 500;
+}
+
+.project-text h3 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.project-text a {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
 .contact-prompt {
     text-align: center;
     background-color: var(--card-bg);
@@ -125,9 +185,11 @@ body.dark .hero p {
     border-radius: 10px;
     margin: 2rem 0;
 }
+
 .contact-prompt h2 {
     color: var(--accent-color);
 }
+
 .button {
     display: inline-block;
     margin-top: 1.5rem;
@@ -139,15 +201,56 @@ body.dark .hero p {
     font-weight: bold;
     transition: background-color 0.3s, color 0.3s;
 }
+
 .button:hover {
     background-color: var(--accent-color);
     color: var(--bg-color);
 }
+
+.page-header {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.page-header p {
+    max-width: 600px;
+    margin: 1rem auto 0 auto;
+}
+
+.about-me-content .container {
+    max-width: 700px;
+}
+
+.about-me-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: var(--accent-color);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.skills-list li {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
 .soft-skills {
     background-color: var(--card-bg);
     border-top: 1px solid var(--border-color);
     border-bottom: 1px solid var(--border-color);
 }
+
 .soft-skills h3 {
     text-align: center;
     font-family: var(--font-heading);
@@ -155,25 +258,30 @@ body.dark .hero p {
     margin-bottom: 2.5rem;
     color: var(--accent-color);
 }
+
 .skills-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
 }
+
 .skill-item h4 {
     font-family: var(--font-heading);
     margin-bottom: 0.5rem;
     display: flex;
     align-items: center;
 }
+
 .skill-item p {
     font-size: 0.95rem;
     color: var(--text-color);
     opacity: 0.8;
 }
+
 .extra-content {
     padding-top: 0;
 }
+
 .extra-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -183,53 +291,160 @@ body.dark .hero p {
     padding: 2.5rem;
     border-radius: 10px;
 }
+
 .extra-item h3 {
     font-family: var(--font-heading);
     font-size: 1.5rem;
     margin-bottom: 1rem;
     color: var(--accent-color);
 }
+
 .extra-item ul {
     list-style: none;
     padding: 0;
 }
+
 .extra-item ul li {
     margin-bottom: 0.5rem;
 }
+
 .extra-item ul a {
     color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
 }
+
 .extra-item ul a:hover {
     text-decoration: underline;
 }
+
+/* ===== INÍCIO DA SEÇÃO DE CARDS DE PROJETO (VERSÃO DEFINITIVA) ===== */
+#manual-projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.project-card-manual {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    display: block;
+    text-decoration: none;
+    color: #EAEAEA;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
+}
+
+.project-card-manual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to top, rgba(18, 18, 18, 0.98) 0%, rgba(18, 18, 18, 0) 100%);
+    padding: 1.5rem;
+    box-sizing: border-box;
+    transition: height 0.4s ease-in-out;
+}
+
+.card-header h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    margin: 0;
+    color: #EAEAEA;
+}
+
+.card-header span {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.card-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-top: 0.5rem;
+    /* Por padrão (mobile), a descrição está visível */
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== FIM DA SEÇÃO DE CARDS DE PROJETO ===== */
+
+/* 4. ANIMAÇÕES E FOOTER */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 footer {
     text-align: center;
     padding: 3rem 0;
     margin-top: 4rem;
     border-top: 1px solid var(--border-color);
 }
+
+/* 5. RESPONSIVIDADE E EFEITOS DE HOVER */
 @media (max-width: 768px) {
     body {
         padding-top: 70px;
     }
+
     #main-header .container {
         padding: 0 1rem;
     }
+
     .main-nav {
         display: none;
     }
+
     .hero h1 {
         font-size: 10vw;
     }
+
+    .featured-project .project-card {
+        grid-template-columns: 1fr;
+    }
+
     section {
         padding: 2rem 0;
     }
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
+
+    .skills-grid,
     .extra-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+/* ESTILOS DE HOVER APLICADOS APENAS EM DISPOSITIVOS COM MOUSE */
+@media (hover: hover) {
+    .project-card-manual {
+        height: 250px;
+    }
+
+    .card-overlay {
+        max-height: 40%;
+    }
+
+    .project-card-manual:hover .card-overlay {
+        max-height: 100%;
+    }
+
+    .project-card-manual:hover img {
+        transform: scale(1.05);
+        /* Efeito de zoom */
     }
 }

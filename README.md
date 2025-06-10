@@ -1,26 +1,24 @@
-# Portfólio Pessoal 
+# Meu Portfólio Pessoal
 
-Bem-vindo(a) ao repositório do meu portfólio pessoal! Esse projeto foi desenvolvido como parte de um trabalho acadêmico para a disciplina de Introdução à Computação e serve como uma vitrine para minhas habilidades, projetos e jornada na Ciência da Computação.
+Este é o repositório do meu site de portfólio pessoal, desenvolvido como parte de um projeto acadêmico na CESAR School. O site apresenta meus projetos, habilidades e jornada na Ciência da Computação.
 
-O site está sendo construído aos poucos, com um commit para cada nova funcionalidade ou melhoria. 🤗
-
-### ✨ Sobre o Projeto
+## ✨ Sobre o Projeto
 
 Um site responsivo de múltiplas páginas com um design elegante e minimalista, construído do zero para demonstrar competências em desenvolvimento web front-end.
 
- **Live Demo:** (O link para o site no ar vai ficar aqui depoiss)
+- **Live Demo:** [Você colocará o link da Netlify/Vercel aqui depois]
 
-### 🛠️ Tecnologias Planejadas
+## 🛠️ Tecnologias Utilizadas
 
 - **HTML5:** Estrutura semântica e acessível.
 - **CSS3:** Estilização moderna com Flexbox, Grid e um sistema de tema claro/escuro.
-- **JavaScript:** Interatividade para o usuário.
+- **JavaScript (ES6+):** Interatividade para o usuário, incluindo manipulação do DOM e efeitos de scroll.
 
-### 💿 Status Atual
+## 🚀 Como Rodar Localmente
 
-- ✅ Estrutura inicial do `index.html` definida.
-- ✅ `README.md` do projeto criado.
-- Estilização com CSS.
-- Criação das páginas de Projetos e Sobre.
-- Implementação de funcionalidades com JavaScript.
-
+1. Clone este repositório:
+   ```bash
+   git clone [https://github.com/rebecaferraz/seu-repositorio.git](https://github.com/rebecaferraz/seu-repositorio.git)
+   ```
+2. Abra a pasta do projeto no VS Code.
+3. Utilize uma extensão como o "Live Server" para abrir o `index.html` no seu navegador.
