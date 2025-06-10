@@ -6,7 +6,7 @@ Este é o repositório do meu site de portfólio pessoal, desenvolvido como part
 
 Um site responsivo de múltiplas páginas com um design elegante e minimalista, construído do zero para demonstrar competências em desenvolvimento web front-end.
 
-- **Live Demo:** [Você colocará o link da Netlify/Vercel aqui depois]
+- **Live Demo:** (https://portfolio-website-delta-six-52.vercel.app/index.html)
 
 ## 🛠️ Tecnologias Utilizadas
 
