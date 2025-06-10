@@ -1,18 +1,16 @@
-# Meu Portfólio Pessoal
+# Portfólio Pessoal
 
-Este é o repositório do meu site de portfólio pessoal, desenvolvido como parte de um projeto acadêmico na CESAR School. O site apresenta meus projetos, habilidades e jornada na Ciência da Computação.
+Este é o repositório do meu site portfólio, desenvolvido como parte de um projeto acadêmico da disciplina de Introdução à Computação da CESAR School. O site apresenta meus projetos, habilidades e jornada na Ciência da Computação.
 
 ## ✨ Sobre o Projeto
 
 Um site responsivo de múltiplas páginas com um design elegante e minimalista, construído do zero para demonstrar competências em desenvolvimento web front-end.
 
-- **Live Demo:** [Você colocará o link da Netlify/Vercel aqui depois]
-
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5:** Estrutura semântica e acessível.
-- **CSS3:** Estilização moderna com Flexbox, Grid e um sistema de tema claro/escuro.
-- **JavaScript (ES6+):** Interatividade para o usuário, incluindo manipulação do DOM e efeitos de scroll.
+- **HTML:** Estrutura semântica e acessível.
+- **CSS:** Estilização moderna com Flexbox, Grid e um sistema de tema claro/escuro.
+- **JavaScript:** Interatividade para o usuário, incluindo manipulação do DOM e efeitos de scroll.
 
 ## 🚀 Como Rodar Localmente
 
