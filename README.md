@@ -6,6 +6,8 @@ Este é o repositório do meu site portfólio, desenvolvido como parte de um pro
 
 Um site responsivo de múltiplas páginas com um design elegante e minimalista, construído do zero para demonstrar competências em desenvolvimento web front-end.
 
+- **Live Demo:** https://rebecasportfolio-d2i745xsm-rebecas-projects-b708f0ce.vercel.app/
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML:** Estrutura semântica e acessível.
