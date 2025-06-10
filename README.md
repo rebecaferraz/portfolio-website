@@ -10,9 +10,9 @@ Um site responsivo de múltiplas páginas com um design elegante e minimalista, 
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5:** Estrutura semântica e acessível.
-- **CSS3:** Estilização moderna com Flexbox, Grid e um sistema de tema claro/escuro.
-- **JavaScript (ES6+):** Interatividade para o usuário, incluindo manipulação do DOM e efeitos de scroll.
+- **HTML:** Estrutura semântica e acessível.
+- **CSS:** Estilização moderna com Flexbox, Grid e um sistema de tema claro/escuro.
+- **JavaScript:** Interatividade para o usuário, incluindo manipulação do DOM e efeitos de scroll.
 
 ## 🚀 Como Rodar Localmente
 
